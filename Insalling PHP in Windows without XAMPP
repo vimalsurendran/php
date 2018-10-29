@@ -1,1 +1,9 @@
-
+1. Download PHP from https://windows.php.net/download
+2. Extract the Zip file
+    2.1 Its not mandatory to extract the files should in Program files
+        Because we the extracted copy will run the command php
+3. Add path-to-extract-folder\php to the path environment variable
+    To ensure Windows can find PHP, you need to change the path environment variable. Open Settings, type ‘environment variables’ 
+    into the search field and open the result. Select the “Advanced” tab, and click the “Environment Variables” button. 
+4. Restart your system
+    Loading the set variable to os
