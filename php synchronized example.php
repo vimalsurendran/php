@@ -32,11 +32,6 @@ class D extends Threaded
         }
 
 };
-
- 
-
- 
-
 class B extends Thread
 
 {
@@ -52,11 +47,7 @@ class B extends Thread
         }
 
 }
-
- 
-
 class C extends Thread
-
 {
         public $m_d;
         public function __construct(&$d)
@@ -67,23 +58,16 @@ class C extends Thread
         public function run()
         {
                 while(1) $this->m_d->set(1,4000);
-        }
-
-               
-
+        }            
 }
-
  
-
 $d = new D();
 $b = new B($d);
 $c = new C($d);
  
 $b->start();
 $c->start();
-
  
-
 while(1)
 {
         sleep(1);
